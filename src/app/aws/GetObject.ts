@@ -15,12 +15,11 @@ const s3Client: S3Client = new S3Client({
   const streamToBuffer = (stream: Readable): Promise<Buffer> => {
     return new Promise((resolve, reject) => {
       const chunks: Buffer[] = [];
-      stream.on('data', (chunk) => chunks.push(chunk));
+      stream.on('data', (chunk: Buffer) => chunks.push(chunk));
       stream.on('end', () => resolve(Buffer.concat(chunks)));
       stream.on('error', reject);
     });
   };
-  
   const getObject = async () => {
     const { Body } = await s3Client.send(
       new GetObjectCommand({
