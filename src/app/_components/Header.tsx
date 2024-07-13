@@ -1,4 +1,5 @@
 import { getImage } from "../aws/GetObject"
+import Link from 'next/link'
 
 export async function Header() {
 
@@ -19,7 +20,7 @@ export async function Header() {
           </p>
         </div>
         <div>
-            <button className="transition ease-out duration-500 bg-dblue rounded-md hover:bg-blue text-white p-4">Contact us Now!</button>
+            <Link href="/contact-us" className="transition ease-out duration-500 bg-dblue rounded-md hover:bg-blue text-white p-4">Contact us Now!</Link>
         </div>
       </div>
     </div>

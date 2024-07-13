@@ -37,7 +37,8 @@ const featuresTwo = [
 ];
 
 export async function Feature() {
-  const image = await getImage("DJI_20240710160556_0092_D.jpeg");
+  const lakeImage = await getImage("DJI_20240710160556_0092_D.jpeg");
+  const pabloImage = await getImage("EI-Website-Pablo.jpeg")
 
   return (
     <div className="overflow-hidden bg-white py-0 sm:py-8">
@@ -74,7 +75,7 @@ export async function Feature() {
           </div>
           <img
             alt="Product screenshot"
-            src={image}
+            src={lakeImage}
             width={2432}
             height={1442}
             className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-mr-4 lg:-mr-0"
@@ -83,7 +84,7 @@ export async function Feature() {
         <div className="flex lg:flex-row flex-col-reverse justify-center items-center gap-4 w-full lg:justify-around">
             <img
               alt="Product screenshot"
-              src={image}
+              src={pabloImage}
               width={2432}
               height={1442}
               className="w-full md:w-[38rem] lg:w-1/2 max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[1/2] md:-mr-4 lg:-mr-0"
