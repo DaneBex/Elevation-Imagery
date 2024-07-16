@@ -1,4 +1,4 @@
-import { Pagination } from "../_tailwind/Pagination"
+// import { Pagination } from "../_tailwind/Pagination"
 
 type testimonialsType = {
   name: string
@@ -6,17 +6,17 @@ type testimonialsType = {
   businessLogo?: string
 }
 
-const testimonials: testimonialsType[] = [
-  {
-    name: "Brad",
-    message: "I would highly recommend Elevation Imagery for your drone photography needs. Dane was friendly, responsive, and easy to work with. The pictures turned out great and were exactly what I needed.",
-    businessLogo: "https://mma.prnewswire.com/media/649227/Century_21_Real_Estate_Logo.jpg?p=facebook"
-  },
-  {
-    name: "Ethan",
-    message: "N/A",
-  }
-]
+// const testimonials: testimonialsType[] = [
+//   {
+//     name: "Brad",
+//     message: "I would highly recommend Elevation Imagery for your drone photography needs. Dane was friendly, responsive, and easy to work with. The pictures turned out great and were exactly what I needed.",
+//     businessLogo: "https://mma.prnewswire.com/media/649227/Century_21_Real_Estate_Logo.jpg?p=facebook"
+//   },
+//   {
+//     name: "Ethan",
+//     message: "N/A",
+//   }
+// ]
 
 export function Testimonial() {
 
@@ -44,7 +44,7 @@ export function Testimonial() {
                 <svg width={3} height={3} viewBox="0 0 2 2" aria-hidden="true" className="fill-gray-900">
                   <circle r={1} cx={1} cy={1} />
                 </svg>
-                <div className="text-gray-600">Realitor for Century 21 Real Estate</div>
+                <div className="text-gray-600">Realtor for Century 21 Real Estate</div>
               </div>
             </figcaption>
           </figure>
