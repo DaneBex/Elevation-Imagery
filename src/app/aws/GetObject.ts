@@ -10,19 +10,13 @@ export async function getImage(key: string) {
     }
   });
 
-  console.log("s3Client: ", s3Client)
-
   const bucketName = process.env.BUCKET_NAME;
-
-  console.log("BucketName: ", bucketName)
 
   // Create a signed URL that expires after a set period, e.g., 60 minutes
   const url = await getSignedUrl(s3Client, new GetObjectCommand({
     Bucket: bucketName,
     Key: key,
   }), { expiresIn: 3600 });
-
-  console.log("URL: ", url)
 
   return url;
 }
