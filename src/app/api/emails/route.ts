@@ -17,10 +17,10 @@ export async function POST(request: Request) {
     const { name, company, email, number, message } = data;
 
 await resend.emails.send({
-  from: email,
+  from: 'no-reply@ecelvevationimagery.com',
   to: 'ecelevationimagery@gmail.com',
   subject: 'Website-contact-us',
-  react: Welcome({ name, company, number, message }),
+  react: Welcome({ name, company, email, number, message }),
 });
 
 return Response.json({ name: "dane" })
