@@ -17,7 +17,7 @@ export async function POST(request: Request) {
     const { name, company, email, number, message } = data;
 
 await resend.emails.send({
-  from: 'no-reply@ecelvevationimagery.com',
+  from: 'no-reply@ecelevationimagery.com',
   to: 'ecelevationimagery@gmail.com',
   subject: 'Website-contact-us',
   react: Welcome({ name, company, email, number, message }),
