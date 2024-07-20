@@ -12,6 +12,7 @@ export default {
         blue: "#23F0C7",
         dblue: "#0FD2AB",
         red: "#EF767A",
+        ered: "#FF0000"
       },
       screens: {
         'sm': '640px',

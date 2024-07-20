@@ -23,5 +23,5 @@ await resend.emails.send({
   react: Welcome({ name, company, email, number, message }),
 });
 
-return Response.json({ name: "dane" })
+return Response.json({ message: "sent" })
 }
