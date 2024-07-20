@@ -70,7 +70,10 @@ export default function ContactUs() {
               htmlFor="first-name"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Name
+              Name{" "}
+              <span className="text-ered" title="required">
+                *
+              </span>
             </label>
             <div className="mt-2.5">
               <input
@@ -107,7 +110,10 @@ export default function ContactUs() {
               htmlFor="email"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Email
+              Email{" "}
+              <span className="text-ered" title="required">
+                *
+              </span>
             </label>
             <div className="mt-2.5">
               <input
@@ -126,7 +132,10 @@ export default function ContactUs() {
               htmlFor="phone-number"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Phone number
+              Phone number{" "}
+              <span className="text-ered" title="required">
+                *
+              </span>
             </label>
             <div className="relative mt-2.5">
               <input
@@ -145,7 +154,10 @@ export default function ContactUs() {
               htmlFor="message"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Message
+              Message{" "}
+              <span className="text-ered" title="required">
+                *
+              </span>
             </label>
             <div className="mt-2.5">
               <textarea
